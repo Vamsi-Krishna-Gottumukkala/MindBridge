@@ -597,6 +597,7 @@
 
     <script>
         // Navbar functionality
+        const apiKey = process.env.API_KEY;
         function toggleMenu() {
             document.querySelector('.mobile-nav').classList.toggle('show');
             document.querySelector('.mobile-overlay').classList.toggle('show');
@@ -686,7 +687,7 @@
         });
 
         // Chatbot JavaScript
-        const OPENROUTER_API_KEY = "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";
+        const OPENROUTER_API_KEY = "apiKey";
         const OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions";
 
         function toggleChat() {
